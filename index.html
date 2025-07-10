@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Interview</title>
+  <style>
+    video, canvas { width: 480px; height: 360px; border: 1px solid black; }
+  </style>
+</head>
+<body>
+  <h2>AI Interview Panel</h2>
+   <p id="warning" style="color: red;"></p>
+  <video class="input_video" autoplay muted playsinline></video>
+  <canvas class="output_canvas"></canvas>
+  <p id="question">Question will appear here</p>
+  <button id="nextBtn">Next</button>
+<button onclick="startInterview()">Start Interview</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/face_detection.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="/static/js/interview.js"></script>
+</body>
+</html>
